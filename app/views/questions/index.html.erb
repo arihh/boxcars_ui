@@ -1,0 +1,12 @@
+<%= form_with(url: questions_path) do |f| %>
+  <%= f.label :prompt %>
+  <%= f.text_area :prompt %>
+  <%= f.submit '送信' %>
+<% end %>
+
+<% if @texts[:prompt] %>
+  <pre>
+  prompt: <%= @texts[:prompt] %>
+  result: <%= @texts[:result] %>
+  </pre>
+<% end %>
