@@ -1,0 +1,12 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2
+
+# ドキュメントの無いクラスを許容する。
+Style/Documentation:
+  Enabled: false
